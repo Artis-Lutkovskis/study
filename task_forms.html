@@ -1,0 +1,83 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task forms</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form name="input" action="html_form_action.asp" method="get">
+<fieldset>
+<legend>Example 1(simple form)</legend>
+Label name <input type="text" size="30" value="Type something..."><br>
+<p> Example block-level help text here.</p>
+<p>Enter some text 
+    <textarea rows="10" cols="30">
+    </textarea>
+</p>
+<input type="checkbox" name="check" >Check me out<br>
+<br><br>
+<input type="submit" value="Submit">
+</fieldset>
+            
+<fieldset>
+<legend>Example 2(simple login form)</legend>
+<input type="text" name="firstname" value="Login">
+<input type="password" name="pwd" value="Password">
+<input type="checkbox" name="Remember me">Remember me
+<input type="submit" value="Sign in">
+</fieldset>
+            
+<fieldset>
+<legend>Example 3(radio and checkbox)</legend>
+<input type="checkbox">Option one is this and that- be sure to include why it's great<br>
+<input type="checkbox">Option two can be something else and selecting it will not deselect option one<br>
+<input type="radio" name="option">Option one is this and that- be sure to include why it's great<br>
+<input type="radio" name="option">Option two can be something else and selecting it will deselect option one
+</fieldset>
+            
+<fieldset>
+<legend>Example 4(dropdown and select box)</legend>
+<select name="options">
+<option value="option 1">option 1</option>
+<option value="option 2">option 2</option>
+<option value="option 3">option 3</option>
+<option value="option 4">option 4</option>
+</select>
+
+<select>
+  <optgroup label="Group 1">
+    <option value="option 1">option 1</option>
+    <option value="option 2">option 2</option>
+  </optgroup>
+  <optgroup label="Group 1">
+    <option value="option 3">option 3</option>
+    <option value="option 4">option 4</option>
+  </optgroup>
+</select>
+</fieldset>
+            
+<fieldset>
+<legend>Example 1*(simple form using definition list)</legend>
+<dl>
+    
+    <dt>Label name</dt>
+    <dd><input type="text" size="30" value="Type something..." ></dd>
+    <dd>Example block-level help text here.</dd>
+ </dl>
+<dl>
+<dt>Enter some text</dt>
+    <dd><textarea rows="10" cols="30"></textarea></dd>
+
+    <dd><input type="checkbox" name="check" >Check me out</dd>
+    <dd><input type="submit" value="Submit"></dd>
+
+</dl>
+</fieldset>
+</form>
+
+    </body>
+</html>
